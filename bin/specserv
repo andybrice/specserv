@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'specserv'
+puts 'This is a test, and it passed.'
+
+#require 'specserv'
