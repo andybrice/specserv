@@ -13,8 +13,8 @@ end
 before do  
   @tester = RSpecGateway.new
   
-  def set_spec_path
-    @spec_path = "#{@spec_name}.rb"
+  def set_spec_path (spec_name)
+    @spec_path = "#{spec_name}.rb"
   end
   
   def spec_file_exists?
@@ -56,8 +56,7 @@ end
 
 get "/:spec_name" do
   
-  @spec_name = params[:spec_name]
-  set_spec_path
+  set_spec_path params[:spec_name]
   
   begin
     raise NoSpecFileError unless spec_file_exists?
