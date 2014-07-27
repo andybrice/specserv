@@ -1,4 +1,5 @@
-require 'sinatra'
+require 'specserv/version'
+require 'sinatra' # possibly overkill, maybe just use thin or something?
 
 class NoSpecFileError < StandardError; end
 
