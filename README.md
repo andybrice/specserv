@@ -25,7 +25,8 @@ Requires RSpec and Sinatra
 - Overhaul aesthetics
 - Navigable test-case index pages
 - Support for custom formatters
-- Authentication for sensitive results 
+- Authentication for sensitive results
+- Make Rack compatible for use with any webserver
 
 ## Contributing ##
 
