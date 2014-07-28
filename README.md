@@ -25,6 +25,7 @@ Requires RSpec and Sinatra
 - Overhaul aesthetics
 - Navigable test-case index pages
 - Support for custom formatters
+- Authentication for sensitive results 
 
 ## Contributing ##
 
