@@ -31,12 +31,12 @@ before do
   
   def respond_with_404
     status 404
-    "Could not find a spec file called #{@spec_path}!"
+    "Could not find a spec file called #{@spec_path} in #{Dir.pwd}"
   end
   
   def respond_with_500
     status 500
-    "There was an error generating results for #{@spec_path}!"
+    "There was an error generating results for #{@spec_path}"
   end
 end
 
