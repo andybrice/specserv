@@ -1,1 +1,1 @@
-require 'specserv/version' # is this actually doing anything here?
+# Cannot be required
