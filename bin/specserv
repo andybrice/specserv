@@ -7,7 +7,7 @@ require 'sinatra' # possibly overkill, maybe just use thin or something?
 set :run, true # not sure about this, apparently Sinatra needs it to automatically launch a server
 
 before do  
-  @tester = RSpecGateway.new
+  @tester = Specserv::RSpecGateway.new
   
   def set_spec_path (spec_path)
     @spec_path = "#{spec_path}.rb"
@@ -55,15 +55,15 @@ get "/:spec_path" do
   set_spec_path( params[:spec_path] )
   
   begin
-    raise NoSpecFileError unless spec_file_exists?
+    raise Specserv::NoSpecFileError unless spec_file_exists?
     run_tests
-    raise MalformedResultsError if malformed_results?
+    raise Specserv::MalformedResultsError if malformed_results?
     respond_with_results
     
-  rescue NoSpecFileError  
+  rescue Specserv::NoSpecFileError  
     respond_with_404
     
-  rescue MalformedResultsError
+  rescue Specserv::MalformedResultsError
     respond_with_500
   end
 end
