@@ -50,9 +50,9 @@ end
 
 ## Result Pages ##
 
-get "/:spec_path" do
+get "/*" do |path|
   
-  set_spec_path( params[:spec_path] )
+  set_spec_path( path )
   
   begin
     raise Specserv::NoSpecFileError unless spec_file_exists?
