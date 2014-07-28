@@ -23,7 +23,7 @@ Requires RSpec and Sinatra
 
 - Become platform-agnostic, not RSpec specific.
 - Overhaul aesthetics
-- Navigable test-case indexes
+- Navigable test-case index pages
 - Support for custom formatters
 
 ## Contributing ##
