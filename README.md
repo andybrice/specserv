@@ -11,8 +11,9 @@ Just run:
 
 ## Usage ##
 
-cd into your spec directory and run `specserv`
-visit http://localhost:port/relative/path/to/spec_file (leave off the .rb extension)
+`cd` into your spec directory, run `specserv` and make a note of the port.
+
+Then visit http://localhost:port/relative/path/to/spec_file (without the .rb extension).
 
 ## Dependencies ##
 
@@ -20,7 +21,10 @@ Requires RSpec and Sinatra
 
 ## Roadmap ##
 
-SpecServ currently uses RSpec, but aims to become platform-agnostic.
+- Become platform-agnostic, not RSpec specific.
+- Overhaul aesthetics
+- Navigable test-case indexes
+- Support for custom formatters
 
 ## Contributing ##
 
