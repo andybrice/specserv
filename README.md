@@ -1,32 +1,28 @@
 SpecServ
 ========
 
-Serve HTML test results from any directory to a web browser via HTTP.
+Serves dynamically updated RSpec results from any directory as HTML
 
-Currently uses RSpec, but aims to become platform-agnostic.
+## Installation ##
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'specserv'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Just run:
 
     $ gem install specserv
 
-## Usage
+## Usage ##
 
-cd into any directory and run ```specserv```
-visit http://localhost:port/[spec_file_name_without_extension]
+cd into your spec directory and run `specserv`
+visit http://localhost:port/relative/path/to/spec_file (leave off the .rb extension)
 
-## Contributing
+## Dependencies ##
+
+Requires RSpec and Sinatra
+
+## Roadmap ##
+
+SpecServ currently uses RSpec, but aims to become platform-agnostic.
+
+## Contributing ##
 
 1. Fork it ( https://github.com/andybrice/specserv/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
