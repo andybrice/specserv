@@ -15,6 +15,8 @@ Just run:
 
 Then visit http://localhost:port/relative/path/to/spec_file (without the .rb extension).
 
+Refresh the page to re-run tests.
+
 ## Dependencies ##
 
 Requires RSpec and Sinatra
